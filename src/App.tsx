@@ -1,17 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Game from '@/pages/Game';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="min-h-screen flex items-center justify-center bg-slate-900 text-cyan-300">
-              Battleships Arcade — loading…
-            </div>
-          }
-        />
+        <Route path="/" element={<Game />} />
       </Routes>
     </BrowserRouter>
   );
